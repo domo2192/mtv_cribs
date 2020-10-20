@@ -3,18 +3,20 @@ class Building
   def initialize
     @units = []
     @renters = []
-    @average_rent = average_rent
+    #@average_rent = average_rent
   end
   def add_unit(unit)
     @units << unit
   end
   def add_renter(renter)
-    renters = []
-    renters.each do |renter|
+    renters_arr = []
+    renters_arr.each do |renter|
       building.renters[:renter]
-    end  
+      renters_arr = @renters
+    end
   end
-  def average_rent
-    # average_rent = building[:units]
-  end
+  #def average_rent
+  #
+  #   average_rent = building.dig[2, :units]
+  # end
 end
